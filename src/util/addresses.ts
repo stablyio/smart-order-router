@@ -109,7 +109,8 @@ export const UNISWAP_MULTICALL_ADDRESSES: AddressMap = {
   [ChainId.BASE]: CHAIN_TO_ADDRESSES_MAP[ChainId.BASE].multicallAddress,
   [ChainId.BLAST]: CHAIN_TO_ADDRESSES_MAP[ChainId.BLAST].multicallAddress,
   [ChainId.FRAX]: CHAIN_TO_ADDRESSES_MAP[ChainId.FRAX].multicallAddress,
-  [ChainId.FRAX_TESTNET]: CHAIN_TO_ADDRESSES_MAP[ChainId.FRAX].multicallAddress,
+  [ChainId.FRAX_TESTNET]:
+    CHAIN_TO_ADDRESSES_MAP[ChainId.FRAX_TESTNET].multicallAddress,
   // TODO: Gnosis + Moonbeam contracts to be deployed
 };
 
