@@ -491,6 +491,20 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId in ChainId]: Token } = {
     'WETH',
     'Wrapped Ether'
   ),
+  [ChainId.FRAX]: new Token(
+    ChainId.FRAX,
+    '0xFC00000000000000000000000000000000000006',
+    18,
+    'wfrxETH',
+    'Wrapped Frax Ether'
+  ),
+  [ChainId.FRAX_TESTNET]: new Token(
+    ChainId.FRAX,
+    '0xFC00000000000000000000000000000000000006',
+    18,
+    'wfrxETH',
+    'Wrapped Frax Ether'
+  ),
 };
 
 function isMatic(

@@ -61,7 +61,7 @@ import {
   WETH_POLYGON,
   WMATIC_POLYGON,
   WMATIC_POLYGON_MUMBAI,
-  WXDAI_GNOSIS
+  WXDAI_GNOSIS,
 } from '../token-provider';
 
 import { IV3PoolProvider } from './pool-provider';
@@ -166,6 +166,8 @@ const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.ZORA_SEPOLIA]: [WRAPPED_NATIVE_CURRENCY[ChainId.ZORA_SEPOLIA]!],
   [ChainId.ROOTSTOCK]: [WRAPPED_NATIVE_CURRENCY[ChainId.ROOTSTOCK]!],
   [ChainId.BLAST]: [WRAPPED_NATIVE_CURRENCY[ChainId.BLAST]!, USDB_BLAST],
+  [ChainId.FRAX]: [WRAPPED_NATIVE_CURRENCY[ChainId.FRAX]!],
+  [ChainId.FRAX_TESTNET]: [WRAPPED_NATIVE_CURRENCY[ChainId.FRAX_TESTNET]!],
 };
 
 /**
