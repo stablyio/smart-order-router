@@ -110,8 +110,11 @@ export const UNISWAP_MULTICALL_ADDRESSES: AddressMap = {
   // TODO: Gnosis + Moonbeam contracts to be deployed
 };
 
-export const SWAP_ROUTER_02_ADDRESSES= (chainId: number): string => {
-  return SWAP_ROUTER_02_ADDRESSES_HELPER(chainId) ?? '0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45';
+export const SWAP_ROUTER_02_ADDRESSES = (chainId: number): string => {
+  return (
+    SWAP_ROUTER_02_ADDRESSES_HELPER(chainId) ??
+    '0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45'
+  );
 };
 
 export const OVM_GASPRICE_ADDRESS =
@@ -241,7 +244,21 @@ export const WETH9: {
     18,
     'WETH',
     'Wrapped Ether'
-  )
+  ),
+  [ChainId.FRAX]: new Token(
+    ChainId.FRAX,
+    '0xFC00000000000000000000000000000000000006',
+    18,
+    'wfrxETH',
+    'Wrapped Frax Ether'
+  ),
+  [ChainId.FRAX_TESTNET]: new Token(
+    ChainId.FRAX,
+    '0xFC00000000000000000000000000000000000006',
+    18,
+    'wfrxETH',
+    'Wrapped Frax Ether'
+  ),
 };
 
 export const BEACON_CHAIN_DEPOSIT_ADDRESS =
