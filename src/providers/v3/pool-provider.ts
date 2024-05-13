@@ -212,6 +212,11 @@ export class V3PoolProvider implements IV3PoolProvider {
     tokenB: Token,
     feeAmount: FeeAmount
   ): { poolAddress: string; token0: Token; token1: Token } {
+    log.info(
+      `getPoolAddress, ${JSON.stringify(tokenA)}, ${JSON.stringify(tokenB)}, ${
+        tokenA.chainId
+      }, ${tokenB.chainId}`
+    );
     const [token0, token1] = tokenA.sortsBefore(tokenB)
       ? [tokenA, tokenB]
       : [tokenB, tokenA];
