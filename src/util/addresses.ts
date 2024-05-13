@@ -39,6 +39,9 @@ export const V3_CORE_FACTORY_ADDRESSES: AddressMap = {
     CHAIN_TO_ADDRESSES_MAP[ChainId.BASE_GOERLI].v3CoreFactoryAddress,
   [ChainId.BASE]: CHAIN_TO_ADDRESSES_MAP[ChainId.BASE].v3CoreFactoryAddress,
   [ChainId.BLAST]: CHAIN_TO_ADDRESSES_MAP[ChainId.BLAST].v3CoreFactoryAddress,
+  [ChainId.FRAX]: CHAIN_TO_ADDRESSES_MAP[ChainId.FRAX].v3CoreFactoryAddress,
+  [ChainId.FRAX_TESTNET]:
+    CHAIN_TO_ADDRESSES_MAP[ChainId.FRAX_TESTNET].v3CoreFactoryAddress,
   // TODO: Gnosis + Moonbeam contracts to be deployed
 };
 
@@ -62,6 +65,9 @@ export const QUOTER_V2_ADDRESSES: AddressMap = {
     CHAIN_TO_ADDRESSES_MAP[ChainId.BASE_GOERLI].quoterAddress,
   [ChainId.BASE]: CHAIN_TO_ADDRESSES_MAP[ChainId.BASE].quoterAddress,
   [ChainId.BLAST]: CHAIN_TO_ADDRESSES_MAP[ChainId.BLAST].quoterAddress,
+  [ChainId.FRAX]: CHAIN_TO_ADDRESSES_MAP[ChainId.FRAX].quoterAddress,
+  [ChainId.FRAX_TESTNET]:
+    CHAIN_TO_ADDRESSES_MAP[ChainId.FRAX_TESTNET].quoterAddress,
   // TODO: Gnosis + Moonbeam contracts to be deployed
 };
 
