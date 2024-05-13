@@ -654,7 +654,23 @@ export const USDB_BLAST = new Token(
   18,
   'USDB',
   'USD Blast'
-)
+);
+
+export const USDT_FRAX_TESTNET = new Token(
+  ChainId.FRAX_TESTNET,
+  '0x9E93F74cD6BeB5dE326E7e1D4D6165Eac771Cf79',
+  6,
+  'USDT',
+  'Tether USD'
+);
+
+export const USDS_FRAX_TESTNET = new Token(
+  ChainId.FRAX_TESTNET,
+  '0x43a44f4F838eE4D83FfA541791A2C06D62D5ad5c',
+  6,
+  'USDS',
+  'Stably USD'
+);
 
 export class TokenProvider implements ITokenProvider {
   constructor(
