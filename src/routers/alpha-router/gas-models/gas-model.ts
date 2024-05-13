@@ -21,6 +21,7 @@ import {
   DAI_OPTIMISM_SEPOLIA,
   DAI_POLYGON_MUMBAI,
   DAI_SEPOLIA,
+  FRAX_FRAX_TESTNET,
   USDB_BLAST,
   USDC_ARBITRUM,
   USDC_ARBITRUM_GOERLI,
@@ -116,7 +117,7 @@ export const usdGasTokensByChain: { [chainId in ChainId]?: Token[] } = {
   ],
   [ChainId.BASE]: [USDC_BASE, USDC_NATIVE_BASE],
   [ChainId.BLAST]: [USDB_BLAST],
-  [ChainId.FRAX_TESTNET]: [USDT_FRAX_TESTNET],
+  [ChainId.FRAX_TESTNET]: [FRAX_FRAX_TESTNET, USDT_FRAX_TESTNET],
 };
 
 export type L1ToL2GasCosts = {

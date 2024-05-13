@@ -656,6 +656,14 @@ export const USDB_BLAST = new Token(
   'USD Blast'
 );
 
+export const FRAX_FRAX_TESTNET = new Token(
+  ChainId.FRAX_TESTNET,
+  '0xFc00000000000000000000000000000000000001',
+  6,
+  'FRAX',
+  'Frax'
+);
+
 export const USDT_FRAX_TESTNET = new Token(
   ChainId.FRAX_TESTNET,
   '0x9E93F74cD6BeB5dE326E7e1D4D6165Eac771Cf79',
