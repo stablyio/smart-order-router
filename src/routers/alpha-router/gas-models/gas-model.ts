@@ -46,7 +46,6 @@ import {
   USDC_POLYGON,
   USDC_SEPOLIA,
   USDC_WORMHOLE_CELO,
-  USDS_FRAX_TESTNET,
   USDT_ARBITRUM,
   USDT_BNB,
   USDT_FRAX_TESTNET,
@@ -117,7 +116,7 @@ export const usdGasTokensByChain: { [chainId in ChainId]?: Token[] } = {
   ],
   [ChainId.BASE]: [USDC_BASE, USDC_NATIVE_BASE],
   [ChainId.BLAST]: [USDB_BLAST],
-  [ChainId.FRAX_TESTNET]: [USDT_FRAX_TESTNET, USDS_FRAX_TESTNET],
+  [ChainId.FRAX_TESTNET]: [USDT_FRAX_TESTNET],
 };
 
 export type L1ToL2GasCosts = {
