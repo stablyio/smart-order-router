@@ -101,6 +101,10 @@ export const ID_TO_CHAIN_ID = (id: number): ChainId => {
       return ChainId.BASE_GOERLI;
     case 81457:
       return ChainId.BLAST;
+    case 252:
+      return ChainId.FRAX;
+    case 2522:
+      return ChainId.FRAX_TESTNET;
     default:
       throw new Error(`Unknown chain id: ${id}`);
   }
@@ -140,6 +144,7 @@ export enum NativeCurrencyName {
   MOONBEAM = 'GLMR',
   BNB = 'BNB',
   AVALANCHE = 'AVAX',
+  FRAXETH = 'frxETH',
 }
 
 export const NATIVE_NAMES_BY_ID: { [chainId: number]: string[] } = {
@@ -213,6 +218,8 @@ export const NATIVE_NAMES_BY_ID: { [chainId: number]: string[] } = {
     'ETHER',
     '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
   ],
+  [ChainId.FRAX]: ['frxETH'],
+  [ChainId.FRAX_TESTNET]: ['frxETH'],
 };
 
 export const NATIVE_CURRENCY: { [chainId: number]: NativeCurrencyName } = {
@@ -235,6 +242,8 @@ export const NATIVE_CURRENCY: { [chainId: number]: NativeCurrencyName } = {
   [ChainId.AVALANCHE]: NativeCurrencyName.AVALANCHE,
   [ChainId.BASE]: NativeCurrencyName.ETHER,
   [ChainId.BLAST]: NativeCurrencyName.ETHER,
+  [ChainId.FRAX]: NativeCurrencyName.FRAXETH,
+  [ChainId.FRAX_TESTNET]: NativeCurrencyName.FRAXETH,
 };
 
 export const ID_TO_NETWORK_NAME = (id: number): ChainName => {
