@@ -127,6 +127,8 @@ export enum ChainName {
   BASE = 'base-mainnet',
   BASE_GOERLI = 'base-goerli',
   BLAST = 'blast-mainnet',
+  FRAX = 'frax-mainnet',
+  FRAX_TESTNET = 'frax-testnet',
 }
 
 export enum NativeCurrencyName {
@@ -277,6 +279,10 @@ export const ID_TO_NETWORK_NAME = (id: number): ChainName => {
       return ChainName.BASE_GOERLI;
     case 81457:
       return ChainName.BLAST;
+    case 252:
+      return ChainName.FRAX;
+    case 2522:
+      return ChainName.FRAX_TESTNET;
     default:
       throw new Error(`Unknown chain id: ${id}`);
   }
@@ -322,6 +328,10 @@ export const ID_TO_PROVIDER = (id: ChainId): string => {
       return process.env.JSON_RPC_PROVIDER_BASE!;
     case ChainId.BLAST:
       return process.env.JSON_RPC_PROVIDER_BLAST!;
+    case ChainId.FRAX:
+      return process.env.JSON_RPC_PROVIDER_FRAX!;
+    case ChainId.FRAX_TESTNET:
+      return process.env.JSON_RPC_PROVIDER_FRAX_TESTNET!;
     default:
       throw new Error(`Chain id: ${id} not supported`);
   }
