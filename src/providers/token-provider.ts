@@ -672,13 +672,13 @@ export const USDT_FRAX_TESTNET = new Token(
   'Tether USD'
 );
 
-// export const USDS_FRAX_TESTNET = new Token(
-//   ChainId.FRAX_TESTNET,
-//   '0x43a44f4F838eE4D83FfA541791A2C06D62D5ad5c',
-//   6,
-//   'USDS',
-//   'Stably USD'
-// );
+export const USDS_FRAX_TESTNET = new Token(
+  ChainId.FRAX_TESTNET,
+  '0x43a44f4F838eE4D83FfA541791A2C06D62D5ad5c',
+  6,
+  'USDS',
+  'Stably USD'
+);
 
 export class TokenProvider implements ITokenProvider {
   constructor(
