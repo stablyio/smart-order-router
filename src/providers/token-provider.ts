@@ -667,7 +667,7 @@ export const FRAX_FRAX_TESTNET = new Token(
 export const USDT_FRAX_TESTNET = new Token(
   ChainId.FRAX_TESTNET,
   '0x9E93F74cD6BeB5dE326E7e1D4D6165Eac771Cf79',
-  6,
+  18,
   'USDT',
   'Tether USD'
 );
@@ -675,7 +675,7 @@ export const USDT_FRAX_TESTNET = new Token(
 export const USDS_FRAX_TESTNET = new Token(
   ChainId.FRAX_TESTNET,
   '0x43a44f4F838eE4D83FfA541791A2C06D62D5ad5c',
-  6,
+  18,
   'USDS',
   'Stably USD'
 );
