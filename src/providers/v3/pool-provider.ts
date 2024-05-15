@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber';
-import { ChainId, Token } from '@uniswap/sdk-core';
+import { ChainId, GET_INIT_HASH, Token } from '@uniswap/sdk-core';
 import { computePoolAddress, FeeAmount, Pool } from '@uniswap/v3-sdk';
 import retry, { Options as RetryOptions } from 'async-retry';
 import _ from 'lodash';
@@ -229,6 +229,7 @@ export class V3PoolProvider implements IV3PoolProvider {
       tokenA: token0,
       tokenB: token1,
       fee: feeAmount,
+      initCodeHashManualOverride: GET_INIT_HASH(this.chainId),
     });
 
     this.POOL_ADDRESS_CACHE[cacheKey] = poolAddress;
