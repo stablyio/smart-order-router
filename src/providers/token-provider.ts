@@ -657,7 +657,7 @@ export const USDB_BLAST = new Token(
 );
 
 export const FRAX_FRAX_TESTNET = new Token(
-  ChainId.FRAX_TESTNET,
+  ChainId.FRAXTAL_TESTNET,
   '0xFc00000000000000000000000000000000000001',
   6,
   'FRAX',
@@ -665,7 +665,7 @@ export const FRAX_FRAX_TESTNET = new Token(
 );
 
 export const USDT_FRAX_TESTNET = new Token(
-  ChainId.FRAX_TESTNET,
+  ChainId.FRAXTAL_TESTNET,
   '0x9E93F74cD6BeB5dE326E7e1D4D6165Eac771Cf79',
   18,
   'USDT',
@@ -673,7 +673,7 @@ export const USDT_FRAX_TESTNET = new Token(
 );
 
 export const USDS_FRAX_TESTNET = new Token(
-  ChainId.FRAX_TESTNET,
+  ChainId.FRAXTAL_TESTNET,
   '0x43a44f4F838eE4D83FfA541791A2C06D62D5ad5c',
   18,
   'USDS',

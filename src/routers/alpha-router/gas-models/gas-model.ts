@@ -117,7 +117,7 @@ export const usdGasTokensByChain: { [chainId in ChainId]?: Token[] } = {
   ],
   [ChainId.BASE]: [USDC_BASE, USDC_NATIVE_BASE],
   [ChainId.BLAST]: [USDB_BLAST],
-  [ChainId.FRAX_TESTNET]: [
+  [ChainId.FRAXTAL_TESTNET]: [
     USDT_FRAX_TESTNET,
     USDS_FRAX_TESTNET,
     // FRAX_FRAX_TESTNET,

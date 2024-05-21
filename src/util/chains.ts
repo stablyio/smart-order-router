@@ -102,9 +102,9 @@ export const ID_TO_CHAIN_ID = (id: number): ChainId => {
     case 81457:
       return ChainId.BLAST;
     case 252:
-      return ChainId.FRAX;
+      return ChainId.FRAXTAL;
     case 2522:
-      return ChainId.FRAX_TESTNET;
+      return ChainId.FRAXTAL_TESTNET;
     default:
       throw new Error(`Unknown chain id: ${id}`);
   }
@@ -218,8 +218,8 @@ export const NATIVE_NAMES_BY_ID: { [chainId: number]: string[] } = {
     'ETHER',
     '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
   ],
-  [ChainId.FRAX]: ['frxETH'],
-  [ChainId.FRAX_TESTNET]: ['frxETH'],
+  [ChainId.FRAXTAL]: ['frxETH'],
+  [ChainId.FRAXTAL_TESTNET]: ['frxETH'],
 };
 
 export const NATIVE_CURRENCY: { [chainId: number]: NativeCurrencyName } = {
@@ -242,8 +242,8 @@ export const NATIVE_CURRENCY: { [chainId: number]: NativeCurrencyName } = {
   [ChainId.AVALANCHE]: NativeCurrencyName.AVALANCHE,
   [ChainId.BASE]: NativeCurrencyName.ETHER,
   [ChainId.BLAST]: NativeCurrencyName.ETHER,
-  [ChainId.FRAX]: NativeCurrencyName.FRAXETH,
-  [ChainId.FRAX_TESTNET]: NativeCurrencyName.FRAXETH,
+  [ChainId.FRAXTAL]: NativeCurrencyName.FRAXETH,
+  [ChainId.FRAXTAL_TESTNET]: NativeCurrencyName.FRAXETH,
 };
 
 export const ID_TO_NETWORK_NAME = (id: number): ChainName => {
@@ -337,9 +337,9 @@ export const ID_TO_PROVIDER = (id: ChainId): string => {
       return process.env.JSON_RPC_PROVIDER_BASE!;
     case ChainId.BLAST:
       return process.env.JSON_RPC_PROVIDER_BLAST!;
-    case ChainId.FRAX:
+    case ChainId.FRAXTAL:
       return process.env.JSON_RPC_PROVIDER_FRAX!;
-    case ChainId.FRAX_TESTNET:
+    case ChainId.FRAXTAL_TESTNET:
       return process.env.JSON_RPC_PROVIDER_FRAX_TESTNET!;
     default:
       throw new Error(`Chain id: ${id} not supported`);
@@ -510,15 +510,15 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId in ChainId]: Token } = {
     'WETH',
     'Wrapped Ether'
   ),
-  [ChainId.FRAX]: new Token(
-    ChainId.FRAX,
+  [ChainId.FRAXTAL]: new Token(
+    ChainId.FRAXTAL,
     '0xFC00000000000000000000000000000000000006',
     18,
     'wfrxETH',
     'Wrapped Frax Ether'
   ),
-  [ChainId.FRAX_TESTNET]: new Token(
-    ChainId.FRAX_TESTNET,
+  [ChainId.FRAXTAL_TESTNET]: new Token(
+    ChainId.FRAXTAL_TESTNET,
     '0xA3FC7769eDFE1a9ac77A78214c558EBb89f63d37',
     18,
     'wfrxETH',
