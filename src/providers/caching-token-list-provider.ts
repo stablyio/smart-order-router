@@ -205,6 +205,8 @@ export class CachingTokenListProvider
     // When we build the calldata for swapping we insert wrapping/unwrapping as needed.
     if (_symbol == 'ETH') {
       symbol = 'WETH';
+    } else if (_symbol == 'frxETH') {
+      symbol = 'wfrxETH';
     }
 
     const tokenInfo = this.chainSymbolToTokenInfo.get(
