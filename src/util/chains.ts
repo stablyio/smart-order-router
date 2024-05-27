@@ -218,8 +218,8 @@ export const NATIVE_NAMES_BY_ID: { [chainId: number]: string[] } = {
     'ETHER',
     '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
   ],
-  [ChainId.FRAXTAL]: ['frxETH'],
-  [ChainId.FRAXTAL_TESTNET]: ['frxETH'],
+  [ChainId.FRAXTAL]: ['frxETH', 'FRXETH'],
+  [ChainId.FRAXTAL_TESTNET]: ['frxETH', 'FRXETH'],
 };
 
 export const NATIVE_CURRENCY: { [chainId: number]: NativeCurrencyName } = {
