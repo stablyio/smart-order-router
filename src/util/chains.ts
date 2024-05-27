@@ -519,7 +519,7 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId in ChainId]: Token } = {
   ),
   [ChainId.FRAXTAL_TESTNET]: new Token(
     ChainId.FRAXTAL_TESTNET,
-    '0xA3FC7769eDFE1a9ac77A78214c558EBb89f63d37',
+    '0xFC00000000000000000000000000000000000006',
     18,
     'wfrxETH',
     'Wrapped Frax Ether'
