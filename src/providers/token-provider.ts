@@ -664,20 +664,20 @@ export const FRAX_FRAX_TESTNET = new Token(
   'Frax'
 );
 
-export const USDT_FRAX_TESTNET = new Token(
-  ChainId.FRAXTAL_TESTNET,
-  '0x9E93F74cD6BeB5dE326E7e1D4D6165Eac771Cf79',
-  18,
-  'USDT',
-  'Tether USD'
+export const DUSD_FRAXTAL = new Token(
+  ChainId.FRAXTAL,
+  '0x70924f77509dC1EB9384077B12Ca049AA2168d6f',
+  6,
+  'DUSD',
+  'dTrinity USD'
 );
 
-export const USDS_FRAX_TESTNET = new Token(
+export const DUSD_FRAXTAL_TESTNET = new Token(
   ChainId.FRAXTAL_TESTNET,
-  '0x43a44f4F838eE4D83FfA541791A2C06D62D5ad5c',
-  18,
-  'USDS',
-  'Stably USD'
+  '0x1Cd7bFf2a65fEbF27164603352Ba850E1D53cc5c',
+  6,
+  'DUSD',
+  'dTrinity USD'
 );
 
 export class TokenProvider implements ITokenProvider {
