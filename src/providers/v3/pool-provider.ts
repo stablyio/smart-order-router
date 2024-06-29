@@ -231,6 +231,9 @@ export class V3PoolProvider implements IV3PoolProvider {
       fee: feeAmount,
       initCodeHashManualOverride: GET_INIT_HASH(this.chainId),
     });
+    log.info(
+      `Pool address: ${poolAddress} for ${token0.symbol}:${token0.address}/${tokenB.symbol}:${tokenB.address}/${feeAmount}%`
+    );
 
     this.POOL_ADDRESS_CACHE[cacheKey] = poolAddress;
 

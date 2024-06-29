@@ -24,6 +24,8 @@ export const SUPPORTED_CHAINS: ChainId[] = [
   ChainId.AVALANCHE,
   ChainId.BASE,
   ChainId.BLAST,
+  ChainId.FRAXTAL,
+  ChainId.FRAXTAL_TESTNET,
   // Gnosis and Moonbeam don't yet have contracts deployed yet
 ];
 
@@ -512,14 +514,14 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId in ChainId]: Token } = {
   ),
   [ChainId.FRAXTAL]: new Token(
     ChainId.FRAXTAL,
-    '0xfc00000000000000000000000000000000000006',
+    '0xFC00000000000000000000000000000000000006',
     18,
     'wfrxETH',
     'Wrapped Frax Ether'
   ),
   [ChainId.FRAXTAL_TESTNET]: new Token(
     ChainId.FRAXTAL_TESTNET,
-    '0xfc00000000000000000000000000000000000006',
+    '0xFC00000000000000000000000000000000000006',
     18,
     'wfrxETH',
     'Wrapped Frax Ether'
