@@ -656,17 +656,9 @@ export const USDB_BLAST = new Token(
   'USD Blast'
 );
 
-export const FRAX_FRAX_TESTNET = new Token(
-  ChainId.FRAXTAL_TESTNET,
-  '0xFc00000000000000000000000000000000000001',
-  6,
-  'FRAX',
-  'Frax'
-);
-
 export const DUSD_FRAXTAL = new Token(
   ChainId.FRAXTAL,
-  '0x70924f77509dC1EB9384077B12Ca049AA2168d6f',
+  '0x1Cd7bFf2a65fEbF27164603352Ba850E1D53cc5c',
   6,
   'DUSD',
   'dTrinity USD'
