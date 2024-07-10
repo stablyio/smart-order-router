@@ -658,18 +658,18 @@ export const USDB_BLAST = new Token(
 
 export const DUSD_FRAXTAL = new Token(
   ChainId.FRAXTAL,
-  '0x1Cd7bFf2a65fEbF27164603352Ba850E1D53cc5c',
+  '0x788D96f655735f52c676A133f4dFC53cEC614d4A',
   6,
-  'DUSD',
-  'dTrinity USD'
+  'dUSD',
+  'dTRINITY USD'
 );
 
 export const DUSD_FRAXTAL_TESTNET = new Token(
   ChainId.FRAXTAL_TESTNET,
-  '0x1Cd7bFf2a65fEbF27164603352Ba850E1D53cc5c',
+  '0x4D6E79013212F10A026A1FB0b926C9Fd0432b96c',
   6,
-  'DUSD',
-  'dTrinity USD'
+  'dUSD',
+  'dTRINITY USD'
 );
 
 export class TokenProvider implements ITokenProvider {
