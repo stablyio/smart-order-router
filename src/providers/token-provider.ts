@@ -656,6 +656,7 @@ export const USDB_BLAST = new Token(
   'USD Blast'
 );
 
+// Fraxtal Tokens
 export const DUSD_FRAXTAL = new Token(
   ChainId.FRAXTAL,
   '0x788D96f655735f52c676A133f4dFC53cEC614d4A',
